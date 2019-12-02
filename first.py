@@ -1,6 +1,6 @@
 import pandas as pd
 
-print('Example path: C:\\Users\\haoya\\Desktop\\insurance audit\\New folder\\ADP_Test.xlsx')
+print('Example path: ./example_data.xlsx')
 adp = pd.read_excel(input('Please input the path of the ADP spreadsheet:').replace('\\','/'), usecols = ['EMPLOYEE TAX ID','PLAN NAME','COVERAGE LEVEL VALUE'])
 cigna = pd.read_excel(input('Please input the path of the Cigna spreadsheet:').replace('\\','/'), usecols = ['Subscriber Id','Billing Line Desc','Tier'])
 adp.columns = ['SSN','Plan Name','Coverage Level']
